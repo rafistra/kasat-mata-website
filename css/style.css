@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --pirmary-red: #990000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pirmary-red);
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+.index{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/landing.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.divider {
+    width: 100%;
+    height: 10px;
+    background: var(--pirmary-red);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--pirmary-red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-weight: 400;
+    color: white;
+}
+
+.logo .logo2 {
+    color: var(--pirmary-red);
+    font-weight: 800;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px
+}
+
+/* nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+} */
+
+
+.header a:hover {
+    background-color: var(--pirmary-red);
+    transition: 0.1s;
+}
+
+.header a.active {
+    color: var(--pirmary-red);
+}
+
+.header a.active:hover {
+    color: white;
+    background-color: var(--pirmary-red);
+    transition: 0.1s;
+}
+
+.header-text h1 {
+    font-family: 'Frijole';
+    color: var(--pirmary-red);
+    font-size: 45px;
+    margin-top: 20%;
+}
+
+.header-text h1:hover {
+    transform: scale(1.02);
+    transition: 5s;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Universal - Footer */
+footer .container{
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1 {
+    color: var(--pirmary-red);
+}
+
+.container .social-media {
+    display: flex;
+}
+
+.container .social-media a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--pirmary-red);
+    margin: 20px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.container .social-media a:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.container .end {
+    font-size: 12px;
+}
+
+.content-card {
+    padding: 10px 20px;
+    background-color: rgba(102, 102, 102, 0.3);
+    border-radius: 10px;
+}
+
+.container .content-card .img-artikel {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/kuyang.png);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+
+.title {
+    color: var(--pirmary-red);
+    text-align: center;
+    font-family: 'Frijole';
+    margin: 10px 0;
+}
+
+.content-card p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+
+/* Tentang */
+.about, .kirim-cerita{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.kirim-card, .about-card {
+    margin: 0 20%;
+}
+
+
+form .form-kirim-cerita,
+form .btn {
+    margin: 10px 20px;
+}
+
+.form-kirim-cerita input[type='text'],
+.form-kirim-cerita input[type='email']
+{
+    border: var(--pirmary-red) solid 2px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1);
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 16px;
+
+}
+#kirim-cerita {
+    border: var(--pirmary-red) solid 2px;
+    border-radius: 5px;
+    padding: 5px 3px;
+    width: 100%;
+    height: 20em;
+    font-size: 16px;
+}
+
+form .form-kirim-cerita textarea:focus {
+    outline: none;
+}
+
+form .form-kirim-cerita input:focus {
+    outline: none;
+}
+
+
